@@ -2,6 +2,8 @@
 
 A deep learning project that classifies chest radiographs as Normal or Pneumonia using three CNN approaches, with Grad-CAM heatmaps to verify the model focuses on the correct anatomical regions.
 
+> **💡 [View the Interactive Explanation →](https://htmlpreview.github.io/?https://github.com/GamithaManawadu/Medical-X-Ray-Classification-Normal-vs-Pneumonia/blob/main/Explanations/xray-classification-explained.html)**
+
 ## Problem
 
 Pneumonia is a leading cause of death worldwide, and early detection from chest X-rays is critical. This project explores whether transfer learning from natural images (ImageNet) can effectively detect pneumonia in grayscale medical images, and whether we can prove the model is making decisions based on the right visual evidence.
@@ -56,6 +58,8 @@ The original validation set contains only 16 images, making validation metrics e
 
 ```
 xray-classification/
+├── dataset
+├── Explanations
 ├── xray-classification.ipynb
 ├── requirements.txt
 ├── README.md
@@ -70,7 +74,7 @@ xray-classification/
 ## Setup
 
 ```bash
-pip install tensorflow matplotlib seaborn scikit-learn opencv-python-headless
+pip install -r requirements.txt
 ```
 
 Download the dataset from [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia), unzip to a `data/` folder, and update `BASE_DIR` in the notebook. Running on Google Colab with a T4 GPU is recommended.
