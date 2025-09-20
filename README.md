@@ -2,6 +2,11 @@
 
 A deep learning project that classifies chest radiographs as Normal or Pneumonia using three CNN approaches, with Grad-CAM heatmaps to verify the model focuses on the correct anatomical regions.
 
+<p align="center">
+  <img src="images/gradcam_examples.png" width="48%">
+  <img src="images/model_comparison.png" width="48%">
+</p>
+
 > **💡 [View the Interactive Explanation →](https://htmlpreview.github.io/?https://github.com/GamithaManawadu/Medical-X-Ray-Classification-Normal-vs-Pneumonia/blob/main/Explanations/xray-classification-explained.html)**
 
 ## Problem
