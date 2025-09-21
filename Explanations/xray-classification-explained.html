@@ -105,8 +105,8 @@
       <tr><td>Test</td><td>234 (37.5%)</td><td>390 (62.5%)</td><td>624</td></tr>
     </table>
 
-    <img class="nb-img" src="images/class_distribution.png" alt="Class Distribution">
-    <img class="nb-img" src="images/sample_xrays.png" alt="Sample X-Rays">
+    <img class="nb-img" src="/images/class_distribution.png" alt="Class Distribution">
+    <img class="nb-img" src="/images/sample_xrays.png" alt="Sample X-Rays">
 
     <div class="warning"><strong>⚠️ Two Key Challenges:</strong> (1) <strong>3:1 class imbalance</strong> - nearly 3× more Pneumonia than Normal. Handled with computed class weights (Normal=1.94×, Pneumonia=0.67×). (2) <strong>Tiny validation set</strong> only 16 images makes val metrics extremely noisy, causing EarlyStopping to be unreliable. This affected Model A and Model C training significantly.</div>
 
@@ -190,8 +190,8 @@
     <span class="toggle-arrow">▼</span>
   </div>
   <div class="section-body"><div class="section-content">
-    <img class="nb-img" src="images/model_comparison.png" alt="Model Comparison">
-    <img class="nb-img" src="images/training_curves.png" alt="Training Curves">
+    <img class="nb-img" src="/images/model_comparison.png" alt="Model Comparison">
+    <img class="nb-img" src="/images/training_curves.png" alt="Training Curves">
     <div class="bar-visual">
       <div class="bar-row"><div class="bar-label" style="color:var(--frozen);">B: Frozen MobileNetV2</div><div class="bar-track"><div class="bar-fill" style="width:89.9%;background:var(--frozen);">89.9% ⭐</div></div></div>
       <div class="bar-row"><div class="bar-label" style="color:var(--fine);">C: Fine-Tuned MobileNetV2</div><div class="bar-track"><div class="bar-fill" style="width:87.7%;background:var(--fine);">87.7%</div></div></div>
@@ -223,8 +223,8 @@
 
     <h3 class="sub" style="color:var(--neg);">Model C's Medical Performance</h3>
     <div class="nb-img-row">
-      <img src="images/confusion_matrix.png" alt="Confusion Matrix">
-      <img src="images/roc_curve.png" alt="ROC Curve">
+      <img src="/images/confusion_matrix.png" alt="Confusion Matrix">
+      <img src="/images/roc_curve.png" alt="ROC Curve">
     </div>
     <table class="nice-table">
       <tr><th style="background:var(--fine);">Metric</th><th style="background:var(--fine);">Value</th><th style="background:var(--fine);">Meaning</th></tr>
@@ -236,7 +236,7 @@
 
     <h3 class="sub" style="color:var(--neg);">Threshold Tuning for Screening</h3>
     <p>By adjusting the classification threshold from 0.5 to <strong>0.60</strong>, the model achieves an optimised balance for screening:</p>
-    <img class="nb-img" src="images/threshold_analysis.png" alt="Threshold Analysis">
+    <img class="nb-img" src="/images/threshold_analysis.png" alt="Threshold Analysis">
     <table class="nice-table">
       <tr><th style="background:#475569;">Setting</th><th style="background:#475569;">Threshold</th><th style="background:#475569;">Sensitivity</th><th style="background:#475569;">Specificity</th><th style="background:#475569;">Missed</th></tr>
       <tr><td>Default</td><td>0.50</td><td>96.7%</td><td>72.6%</td><td>13</td></tr>
@@ -258,7 +258,7 @@
   <div class="section-body"><div class="section-content">
     <p><strong>Grad-CAM</strong> (Gradient-weighted Class Activation Mapping) answers the critical question: "WHERE is the model looking to make its decision?"</p>
 
-    <img class="nb-img" src="images/gradcam_examples.png" alt="Grad-CAM Heatmaps">
+    <img class="nb-img" src="/images/gradcam_examples.png" alt="Grad-CAM Heatmaps">
 
     <h3 class="sub" style="color:var(--fine);">How Grad-CAM Works</h3>
     <div class="flow">
