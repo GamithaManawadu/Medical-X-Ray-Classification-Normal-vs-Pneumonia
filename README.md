@@ -73,7 +73,10 @@ xray-classification/
     ├── model_comparison.png
     ├── confusion_matrix.png
     ├── roc_curve.png
-    └── threshold_analysis.png
+    ├── threshold_analysis.png
+    ├── class_distribution.png
+    ├── sample_xrays.png
+    └── training_curves.png
 ```
 
 ## Setup
